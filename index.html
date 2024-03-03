@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Microsoft - Official Home Page</title>
 </head>
+
 <body>
-    <h1>Hello world</h1>
+    <div class="navbar flex justify-between items-center p-3">
+        <div class="flex justify-center items-center md:order-2 ">
+            <div class="hambuger p-4 cursor-pointer md:hidden">
+                <div class="line h-0.5 w-6 my-1 bg-black"></div>
+                <div class="line h-0.5 w-6 my-1 bg-black"></div>
+                <div class="line h-0.5 w-6 my-1 bg-black"></div>
+            </div>
+            <div class="md:hidden">
+                <div class="ml-5"></div>
+                <img src="search.png" class="h-4 w-6 cursor-pointer" alt="">
+            </div>
+        </div>
+        <div class="flex md:order-1">
+            <img src="microsoft.png" class="h-6 w-6 mr-1 cursor-pointer ml-14" alt="">
+            <div class="text-gray-500 text-xl cursor-pointer font-bold tracking-tighter">Microsoft</div>
+            <div class="features w-fit md:w-auto bg-gray-200 md:static md:bg-white absolute inset-0 -translate-x-96 md:translate-x-0 md:flex md:mx-5 md:mt-1 md:text-sm md:space-x-3">
+                <div class="">
+                    Microsoft 365</div>
+                <div class="feature">Office
+                </div>
+                <div class="feature">
+                    Copilot</div>
+                <div class="feature">
+                    Windows </div>
+                <div class="feature">
+                    Support</div>
+            </div>
+        </div>
+        <div class="flex md:order-3">
+            <div
+                class="hidden md:block mr-5 cursor-pointer md:hover:underline md:hover:underline-offset-8 md:text-sm  md:hover:decoration-2">
+                All Microsoft</div>
+            <img src="search.png" class="h-6 w-5 cursor-pointer mr-5 hidden md:block" alt="">
+            <img src="Cart.png" class="h-6 w-5 cursor-pointer">
+            <div class="ml-4 "></div>
+            <img src="account.png" class="h-7 w-7 cursor-pointer mr-20" alt="">
+        </div>
+    </div>
+    <div class="slider flex flex-col-reverse md:flex-row bg-[#e6e6e6]">
+        <div class="left">
+            <h1 class="text-4xl">Surface Laptop 4</h1>
+            <p>Get online protection, secure cloud storage and innovative apps designed to fit your needs – all in one plan.</p>
+        </div>    
+    </div>
 </body>
+
 </html>
