@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Microsoft 365 - Subscription for Office Apps | Microsoft 365</title>
 </head>
 <body>
-        <div class="container mx-auto">
-            <div class="navbar flex justify-between items-center p-3">
-                <div class="flex justify-center items-center">
+        <div class="container">
+            <div class="navbar flex justify-between items-center p-2 mx-auto">
+                <div class="flex justify-center items-center md:hidden">
                     <div class="hamburger pl-4 cursor-pointer">
                         <div class="line my-1 bg-black h-0.5 w-6"></div>
                         <div class="line my-1 bg-black h-0.5 w-6"></div>
@@ -19,14 +19,66 @@
                         <img src="assists/search.svg" alt="">
                     </div>
                 </div>
-                <div class="flex justify-center">
-                    <img src="microsoft.png" class="h-6 w-6 mr-1 mt-0.5 cursor-pointer ml-14" alt="">  
-                    <div class="text-gray-500 text-xl flex items-center cursor-pointer font-bold tracking-tighter">Microsoft</div>
+                <div class="flex md:order-1">
+                    <div class="flex justify-center">
+                        <img src="microsoft.png" class="h-6 w-6 mr-1 mt-0.5 cursor-pointer ml-14" alt="">  
+                        <div class="text-gray-500 text-xl flex items-center cursor-pointer font-bold tracking-tighter">Microsoft</div>
+                    </div>
+                    <div class="features w-fit md:w-auto md:flex bg-gray-200 md:static md:bg-white absolute inset-0 -translate-x-96 md:translate-x-0 md:mx-5 md:text-sm md:space-x-6">
+                        <div class="line my-1 bg-black h-6 w-0.5"></div>
+                        <div class="feature w-fit font-bold md:text-lg md:font-medium">
+                            <a href="Microsoft365.html">Microsoft 365</a>
+                        </div>
+                        <div class="feature w-fit md:mt-1 md:font-[250]">Products
+                        </div>
+                        <div class="feature w-fit md:mt-1 md:font-[250]">
+                            Plans and pricing</div>
+                        <div class="feature w-fit md:mt-1 md:font-[250]">
+                            Resources</div>
+                        <div class="feature w-fit md:mt-1 md:font-[250]">
+                            Support</div>
+                    </div>
+                </div>    
+                <div class="flex md:order-3">
+                    <div
+                        class="hidden md:block md:pt-1 mr-5 cursor-pointer md:hover:underline md:hover:underline-offset-8 md:text-sm  md:hover:decoration-2">
+                        All Microsoft</div>
+                    <img src="assists/search.svg" class="h-6 w-5 cursor-pointer mr-3 hidden md:block" alt="">
+                    <div class="ml-4 "></div>
+                    <img src="account.png" class="h-7 w-7 cursor-pointer mr-4 md:mr-0" alt="">
+                    </div>
+            </div>        
+            <!-- md screen -->
+            <div class="border border-r-white text-sm border-t-gray-100 font-semibold py-2 pl-4 md:hidden">Microsoft 365</div>
+            <div class="md:bg-center md:w-screen md:h-screen md:bg-cover" style="background-image:url('Hero-Backgroundimage-1600x680.avif')">
+                <div class="md:pt-10 md:font-semibold md:marker:order-1 invisible md:visible">
+                    <div class="md:pl-10 md:mt-12 md:mx-4">
+                        <div class="md:text-sm md:text-1xl md:font-medium md:text-gray-600">MICROSOFT 365 FOR HOME</div>
+                        <div class="md:w-[40rem] md:font-semibold md:leading-normal md:text-[2.5rem] md:my-1">Supercharge your productivity with AI</div>
+                        <div class="md:text-lg md:my-1 md:font-normal md:w-[40rem]">Get productivity apps, security, and storage with Microsoft 365. Then add AI power with Copilot Pro.
+                        </div>
+                        <div class="md:my-10 md:px-1">
+                            <button class="md:text-white md:mb-8 md:bg-gray-900 md:rounded-md md:px-5 md:py-4 md:text-lg ">See plans and pricing</button>
+                        </div>
+                    </div> 
+                    <div class="md:border-[0.1rem] md:grid md:grid-cols-2 md:divide-gray-300 md:bg-white rounded-md 
+                    md:mx-16 md:divide-x-2">
+                        <div class="md:py-6 md:pl-4 md:text-sm hover:border-b-gray-800 md:rounded-l-md md:border-b-4">For home</div>
+                        <div class="md:py-6 md:pl-4 md:text-sm hover:border-b-gray-800 md:rounded-r-md md:border-b-4">For business</div>
+                    </div>
                 </div>
-                <div>
-                    <img src="account.png" class="h-7 w-7 cursor-pointer mr-4 md:mr-20" alt="">
-                </div>
-            </div>
+            </div>    
         </div>
+        <style>
+            @media (max-width: 640px) 
+            {
+                .bg-cover {
+                    background-size: 80% auto;
+                    background-position: center;
+                    width: 100vw; /* Set the width to cover the full viewport width */
+                    height: calc(100vw / 16 * 6); /* Maintain aspect ratio (assuming 16:7 aspect ratio for the image) */
+                }
+            }
+        </style>
 </body>
 </html>
